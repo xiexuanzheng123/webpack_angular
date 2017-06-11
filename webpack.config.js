@@ -11,6 +11,9 @@ module.exports = {
         ],
         index: [
             './index.js'
+        ],
+        name: [
+            './app/js/name.js'
         ]
     },
     output: {
@@ -44,10 +47,10 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'angular',
             filename: 'build/angular.html',
-            template: 'index.html',
+            template: './app/html/name.html',
             inject: 'body',
             hash: true,
-            chunks: ['index']
+            chunks: ['name']
         }),
         new ExtractTextPlugin('./app/css/style.css')
     ]
