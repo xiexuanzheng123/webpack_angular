@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Documenta</title>
+</head>
+<body>
+    <div ng-app="">
+        <span ng-bind="b"> </span>
+        <p>名字： <input type="text" ng-model="name"></p>
+        <h1 data-ng-init="a=1;b=2">Hello {{name}}{{a}}{{b}}</h1>
+        <h2 data-ng-bind="a"></h2>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "name": "webpack_angular",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiexuanzheng123/webpack_angular.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiexuanzheng123/webpack_angular/issues"
+  },
+  "homepage": "https://github.com/xiexuanzheng123/webpack_angular#readme",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.0.0",
+    "css-loader": "^0.28.4",
+    "express": "^4.15.3",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "html-webpack-plugin": "^2.28.0",
+    "style-loader": "^0.18.2",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5",
+    "webpack-hot-middleware": "^2.18.0"
+  }
+}
