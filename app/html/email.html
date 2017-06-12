@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form ng-app="" name="myForm" ng-init="myText = 'test@runoob.com'">
+        Email:
+        <input type="email" name="myAddress" ng-model="myText" required>
+        <span ng-show="myForm.myAddress.$error.email">不是一个合法的邮箱地址</span>
+        <h1>状态</h1>
+        1 {{myForm.myAddress.$valid}}
+        2 {{myForm.myAddress.$dirty}}
+        3 {{myForm.myAddress.$touched}}
+        4 {{myForm.myAddress.$error.email}}
+        5 {{myForm.myAddress.$empty}}
+    </form>
+</body>
+</html>
