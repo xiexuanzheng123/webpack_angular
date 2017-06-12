@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <!--<select id="s1"ng-init="selectedName = names[0]" ng-model="selectedName" ng-options="x for x in names"></select>
+        <h1>你选择的是：{{selectedName.site}}</h1>-->
+        <!--<select ng-model="selectedSite">
+            <option ng-repeat="x in sites" value="{{x.url}}">{{x.site}}</option>
+        </select>
+        <h1>你选择的是：{{selectedSite}}</h1>-->
+        <!--<select ng-model="selectedSite" ng-options="x.site for x in sites"></select>
+        <h1>你选择的是：{{selectedSite.site}}</h1>
+        <h1>你选择的是：{{selectedSite.url}}</h1>-->
+        <select ng-model="selectedSite" ng-options="x for (x, y) in sites">
+        </select>
+
+        <h1>你选择的值是: {{selectedSite}}</h1>
+    </div>
+</body>
+</html>
