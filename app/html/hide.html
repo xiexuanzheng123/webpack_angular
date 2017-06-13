@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="persionCtrl">
+        <div runoob-directive></div>
+        <button ng-click="toggle()">显示/隐藏</button>
+        <p ng-hide="myVar">
+            名：<input type="text" ng-model="firstName"/><br/>
+            姓：<input type="text" ng-model="lastName"><br/>
+            <br/>
+            Full Name: {{firstName + ' ' + lastName}}
+        </p>
+    </div>
+</body>
+</html>
