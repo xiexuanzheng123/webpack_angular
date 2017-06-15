@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://sandbox.runjs.cn/uploads/rs/376/pbcx3e1z/angular.min.js"></script>
+    <title>Document</title>
+    <script>
+        (function() {
+            var mainApp = angular.module("mainApp", []);
+            mainApp.filter('reverse', function() {
+                return function(input, uppercase) {
+                    input = input || '';
+                    var out = "";
+                    // for(var i=0; i<input.lenth; i++) {
+                    //     out = input.split("").reverse().join("");
+                    // }
+                    out = input.split("").reverse().join("");
+                    if(uppercase) {
+                        out = out.toUpperCase();
+                    }
+                    return out;
+                }
+            })
+            mainApp.controller('filterController', function($scope) {
+                $scope.greeting = "AngularJs";
+            })
+        })()
+    </script>
+</head>
+<body ng-app="mainApp">
+    <div ng-controller="filterController">
+        <input ng-model="greeting" type="text"><br>
+        No filter: {{greeting}}<br>
+        Reverse: {{greeting | reverse}}<br>
+        Reverse + uppcase: {{greeting | reverse: true}}<br>
+    </div>
+</body>
+</html>
